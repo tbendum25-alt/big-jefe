@@ -66,8 +66,8 @@ interface DemoMember {
 }
 
 const KEY = 'bigjefe.demo.v1'
-export const DEMO_OWNER_EMAIL = 'proprietaire@demo.local'
-export const DEMO_OWNER_PASSWORD = 'demo1234'
+export const DEMO_OWNER_EMAIL = 'bigjefe@demo.new'
+export const DEMO_OWNER_PASSWORD = 'bigjefe91'
 
 function fresh(): Store {
   return {
