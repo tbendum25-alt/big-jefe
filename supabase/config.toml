@@ -1,0 +1,12 @@
+# Réglages des fonctions serveur (Supabase CLI).
+[functions.fedapay-webhook]
+verify_jwt = false   # appelée par FedaPay, qui n'a pas de jeton Supabase : la vérification se fait auprès de FedaPay
+
+[functions.send-email]
+verify_jwt = true
+
+[functions.fedapay-create]
+verify_jwt = true
+
+[functions.admin-team]
+verify_jwt = false   # « status » et « setup » sont publics (protégés par SETUP_CODE) ; les autres actions vérifient le jeton elles-mêmes
